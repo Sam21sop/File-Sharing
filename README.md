@@ -36,7 +36,7 @@ Django
 
 3. Upload File:
     - Method: POST
-    - Endpoint: http://127.0.0.1:8000/api/upload-file/
+    - Endpoint: http://127.0.0.1:8000/api/upload-file/<user_type>
     - Headers:
         Content-Type: multipart/form-data
         Authorization: Bearer <your_access_token> (Use the access token obtained after login)
@@ -51,7 +51,7 @@ Django
 
 5. Get All Upload Files (by Ops User):
     - Method: GET
-    - Endpoint: http://127.0.0.1:8000/api/get-all-files/
+    - Endpoint: http://127.0.0.1:8000/api/get-all-files/<user_type>
     - Headers:
         Authorization: Bearer <your_access_token> (Use the access token obtained after login)
 
